@@ -1,0 +1,11 @@
+name: Hello World  #pipeline#
+
+on:
+  push:              #triggers based on events#
+
+jobs:                  # stages#
+  job1:          #stage#
+    runs-on: ubuntu-slim #agent and in github we call it as runner#
+    steps:
+      - name: say Hello
+        run: echo "Hello world from github actions"
