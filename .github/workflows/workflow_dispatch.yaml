@@ -6,7 +6,8 @@ on:
       - main   #Filters#
   workflow_dispatch: 
     inputs:
-      person_name: " "
+      person_name:
+        type: string
 
 jobs:                  # stages#
   job1:          #stage#
