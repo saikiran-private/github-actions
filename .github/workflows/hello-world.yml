@@ -1,9 +1,9 @@
 name: Hello World  #pipeline#
 
 on:
-  push: #triggers based on events#
+  pull_request: #triggers based on events#
     branches:
-      - test3   #Filters#
+      - main   #Filters#
 
 jobs:                  # stages#
   job1:          #stage#
