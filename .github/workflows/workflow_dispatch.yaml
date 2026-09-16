@@ -8,6 +8,12 @@ on:
     inputs:
       person_name:
         type: string
+      another_person_name:
+        type: choice
+        options:
+          - sai
+          - kiran
+          - artisantek
 
 jobs:                  # stages#
   job1:          #stage#
