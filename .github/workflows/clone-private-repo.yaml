@@ -7,7 +7,7 @@ on:
   workflow_dispatch: 
 
 env:
-  REPO: https://github.com/sayabugarisaikiran/movie-analyzer-project.git
+  REPO: https://github.com/sayabugarisaikiran/streamflix-app.git
 
 jobs:
   clone-repo:
@@ -17,5 +17,5 @@ jobs:
         run: |
           echo "cloning the private repo"
           git clone "$REPO"
-          cd "movie-analyzer-project"
+          cd "streamflix-app"
           ls -lrt
