@@ -22,3 +22,11 @@ jobs:                  # stages#
         run: echo "hello from ubuntu latest job 2"
       - name: show system info
         run: uname -a
+
+  job3:
+    runs-on: ubuntu-latest 
+    steps:
+      - name: hello from ubuntu latest job3
+        run: echo "hello from ubuntu latest job 3"
+      - name: show system info
+        run: uname -a
