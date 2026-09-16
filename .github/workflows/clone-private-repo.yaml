@@ -17,5 +17,5 @@ jobs:
         run: |
           echo "cloning the private repo"
           git clone "$REPO"
-          cd "$REPO"
+          cd "movie-analyzer-project"
           ls -lrt
