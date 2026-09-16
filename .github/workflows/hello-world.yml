@@ -11,7 +11,6 @@ jobs:                  # stages#
     steps:
       - name: say Hello
         run: echo "Hello world from test4 branch"
-        run: echo "Hello world from github actions - main branch"
       - name: show system info
         run: uname -a
 
