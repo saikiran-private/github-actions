@@ -1,0 +1,15 @@
+name: Clone Private-repo
+
+on:
+  pull_request: 
+    branches:
+      - main
+  workflow_dispatch: 
+
+jobs:
+  clone-repo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: clone the private repo
+        run: |
+          echo "cloning the private repo"
