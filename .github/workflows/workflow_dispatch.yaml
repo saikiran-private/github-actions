@@ -15,7 +15,15 @@ on:
           - kiran
           - artisantek
 
-jobs:                  # stages#
+jobs: # stages#
+  job10: 
+    runs-on: ubuntu-slim
+    steps:
+      - name: print all the values from the variables
+        run: |
+          echo "My Name is : ${{ inputs.person_name }}"
+          echo "My Company name is: ${{ inputs.another_person_name }}"
+          
   job1:          #stage#
     runs-on: ubuntu-slim #agent and in github we call it as runner#
     steps:
