@@ -7,7 +7,7 @@ on:
   workflow_dispatch: 
 
 env:
-  REPO: https://github.com/sayabugarisaikiran/streamflix-app.git
+  REPO: sayabugarisaikiran/streamflix-app
 
 jobs:
   clone-repo:
