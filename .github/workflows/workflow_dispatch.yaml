@@ -5,6 +5,8 @@ on:
     branches:
       - main   #Filters#
   workflow_dispatch: 
+    inputs:
+      person_name: " "
 
 jobs:                  # stages#
   job1:          #stage#
