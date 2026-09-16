@@ -6,6 +6,9 @@ on:
       - main
   workflow_dispatch: 
 
+env:
+  REPO: https://github.com/sayabugarisaikiran/movie-analyzer-project.git
+
 jobs:
   clone-repo:
     runs-on: ubuntu-latest
@@ -13,3 +16,6 @@ jobs:
       - name: clone the private repo
         run: |
           echo "cloning the private repo"
+          git clone "$REPO"
+          cd "$REPO"
+          ls -lrt
