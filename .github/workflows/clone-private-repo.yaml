@@ -29,7 +29,7 @@ jobs:
       - name: clone the repo
         uses: actions/checkout@v4
         with:
-          repository: "$REPO"
+          repository: ${{ env.REPO }}
           token: ${{ secrets.GH_TOKEN }}
       - name: show current directory
         run: pwd
