@@ -4,6 +4,7 @@ on:
   pull_request: #triggers based on events#
     branches:
       - main   #Filters#
+  workflow_dispatch: 
 
 jobs:                  # stages#
   job1:          #stage#
