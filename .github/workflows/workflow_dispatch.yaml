@@ -14,6 +14,8 @@ jobs:                  # stages#
         run: echo "Hello world from test4 branch"
       - name: show system info
         run: uname -a
+      - name: testing whether this is good or not
+        run: echo "good questions"
 
   job2:
     runs-on: ubuntu-latest 
