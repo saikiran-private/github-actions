@@ -1,4 +1,4 @@
-name: Hello World from test4 branch #pipeline#
+name: Hello World from workflow dispatch #pipeline#
 
 on:
   pull_request: #triggers based on events#
