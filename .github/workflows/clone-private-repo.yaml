@@ -14,8 +14,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: clone the private repo
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN}}
         run: |
           echo "cloning the private repo"
           git clone "$REPO"
+          echo "key Value: $GH_TOKEN"
           cd "streamflix-app"
           ls -lrt
