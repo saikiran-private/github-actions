@@ -22,3 +22,16 @@ jobs:
           echo "key Value: $GH_TOKEN"
           cd "streamflix-app"
           ls -lrt
+
+  clone-repo-with-actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: clone the repo
+        uses: actions/checkout@v4
+        with:
+          repository: "$REPO"
+          token: ${{ secrets.GH_TOKEN }}
+      - name: show current directory
+        run: pwd
+      - name: List all the files
+        run: ls -lrt
